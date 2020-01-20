@@ -16,7 +16,7 @@
         "test": "echo 'There are no tests'",
         "flow": "flow",
         "ts": "tsc index.d.ts --noEmit",
-        "transpile": "rm -rf lib && babel src --out-dir lib --copy-files",
+        "transpile": "rm -rf lib && npx babel src --out-dir lib --copy-files",
         "prepublishOnly": "npm run ts && npm run transpile",
         "postinstall": "npm run transpile"
     },
