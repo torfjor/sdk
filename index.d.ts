@@ -360,7 +360,7 @@ declare class EnturService {
 }
 
 export function throttler<T, U>(
-  queryHandler: (T) => Promise<U>,
+  queryHandler: (query: T) => Promise<U>,
   queries: T[]
 ): Promise<U[]>;
 
